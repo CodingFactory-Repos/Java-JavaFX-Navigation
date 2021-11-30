@@ -93,7 +93,7 @@
       <items>
         <AnchorPane>
           <children>
-                  <VBox prefHeight="551.0" prefWidth="220.0">
+                  <VBox fx:id="Menu" prefHeight="551.0" prefWidth="220.0" styleClass="Menu">
                      <children>
                   <Label alignment="CENTER" minWidth="60.0" prefWidth="-1.0" style="&#10;" text="Master" textAlignment="CENTER" wrapText="false">
                     <font>
@@ -103,17 +103,23 @@
                       <Color red="0.624" green="0.624" blue="0.624" fx:id="x2" />
                     </textFill>
                   </Label>
-                        <Button mnemonicParsing="false" text="Commode" />
-                        <Button mnemonicParsing="false" text="Fauteuil" />
+                        <VBox prefHeight="203.0" prefWidth="200.0" styleClass="Menu-item">
+                           <children>
+                              <Button fx:id="btnCommode" mnemonicParsing="false" text="Commode" />
+                              <Button fx:id="btnFauteuil" mnemonicParsing="false" text="Fauteuil" />
+                           </children>
+                        </VBox>
                      </children>
                   </VBox>
           </children>
         </AnchorPane>
         <ScrollPane prefHeight="-1.0" prefWidth="-1.0">
           <content>
-            <AnchorPane id="Content" minHeight="-1.0" minWidth="-1.0" prefHeight="545.0" prefWidth="430.0">
+            <AnchorPane id="Content" fx:id="pageCentre" minHeight="-1.0" minWidth="-1.0" prefHeight="545.0" prefWidth="430.0">
                      <children>
                         <VBox prefHeight="545.0" prefWidth="430.0" />
+                        <fx:include fx:id="frameFauteuil" source="Fauteuil.fxml" />
+                        <fx:include fx:id="frameCommode" source="Commode.fxml" />
                      </children>
             </AnchorPane>
           </content>

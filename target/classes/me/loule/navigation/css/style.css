@@ -1,0 +1,10 @@
+.Menu {
+    -fx-padding: 10;
+    -fx-background-color: #fff;
+}
+
+.Menu-item {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+}
