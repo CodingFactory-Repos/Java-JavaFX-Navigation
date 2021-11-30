@@ -7,4 +7,6 @@ module me.loule.navigation {
 
     opens me.loule.navigation to javafx.fxml;
     exports me.loule.navigation;
+    exports me.loule.navigation.controller;
+    opens me.loule.navigation.controller to javafx.fxml;
 }

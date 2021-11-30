@@ -1,4 +1,4 @@
-package me.loule.navigation;
+package me.loule.navigation.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
